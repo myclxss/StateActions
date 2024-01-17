@@ -1,0 +1,7 @@
+name: StateActions
+version: '1.0-SNAPSHOT'
+main: myclass.stateactions.StateActions
+
+commands:
+  state:
+    description: asd

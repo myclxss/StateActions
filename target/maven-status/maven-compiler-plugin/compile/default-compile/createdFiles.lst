@@ -1,0 +1,5 @@
+myclass\stateactions\command\FirstCommand.class
+myclass\stateactions\manager\StateManager.class
+myclass\stateactions\StateActions.class
+myclass\stateactions\API.class
+myclass\stateactions\listener\UserListener.class
