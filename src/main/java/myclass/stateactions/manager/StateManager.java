@@ -13,6 +13,7 @@ public class StateManager {
     public static String getPlayerState(Player player) {
         return player.getMetadata("state").get(0).asString();
     }
+
     public static void removePlayerState(Player player) {
         player.removeMetadata("state", API.getInstance().getMain());
     }

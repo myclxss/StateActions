@@ -10,7 +10,7 @@ public class API {
     private static API instance;
     private final StateActions main;
 
-    public API(final StateActions plugin){
+    public API(final StateActions plugin) {
 
         instance = this;
         main = plugin;
@@ -18,17 +18,21 @@ public class API {
         loadCommand();
         loadListener();
     }
-    public void loadCommand(){
+
+    public void loadCommand() {
         main.getCommand("state").setExecutor(new FirstCommand());
     }
-    public void loadListener(){
+
+    public void loadListener() {
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new UserListener(), main);
     }
-    public StateActions getMain(){
+
+    public StateActions getMain() {
         return main;
     }
-    public static API getInstance(){
+
+    public static API getInstance() {
         return instance;
     }
 }
